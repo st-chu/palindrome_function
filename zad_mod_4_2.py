@@ -1,7 +1,7 @@
 def palindrom(word):
     '''
         type(palindrom) >> <class 'bool'>
-        return True when word is palindrom
+        return True when the word is a palindrome
         arguments: word
         type(word) >> <class 'str'>
     '''
