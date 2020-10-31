@@ -1,15 +1,17 @@
-def palindrom(word):
+def palindrom(sentence):
     '''
         type(palindrom) >> <class 'bool'>
         return True when the word is a palindrome
-        arguments: word
-        type(word) >> <class 'str'>
+        arguments: sentence
+        type(sentence) >> <class 'str'>
     '''
-    if word == word[::-1]:
+    sentence = sentence.lower()
+    sentence = sentence.replace(' ', '')
+    if sentence == sentence[::-1]:
         return True
     else:
         return False
 
 
-print(palindrom('oko'))
+print(palindrom('A to kiwi zdziwi kota'))
 print(palindrom('zielony'))
